@@ -1,0 +1,5 @@
+count = int(input())
+scores = list(map(int, input().split(' ')))
+max_score = max(scores)
+adjusted_scores = list(map(lambda x: x / max_score * 100, scores))
+print(sum(adjusted_scores) / len(adjusted_scores))
